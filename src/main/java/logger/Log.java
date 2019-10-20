@@ -10,7 +10,7 @@ import org.aspectj.lang.annotation.Before;
 public class Log {
 	private final static Logger log = Logger.getLogger(Log.class);
 	
-	@Before("execution(* Person.*(..))")
+	@Before("execution(* Person.*())")
 	public void myadvice(JoinPoint jp) {
 		System.out.println("You are can!");
 	}
